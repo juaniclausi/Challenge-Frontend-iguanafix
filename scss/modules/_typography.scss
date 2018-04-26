@@ -1,0 +1,69 @@
+// Lists
+
+.list {
+     margin-bottom: 30px;
+}
+
+.list-feature {
+     position: absolute;
+     bottom: -10%;
+     @extend .list;     
+     padding: 0;
+     width: 80%;
+
+     li {
+          line-height: 1.5em;          
+     }
+
+     li:last-child {
+          padding-bottom: 10px;
+          @include add-border(1px, #cccccc, bottom);  
+     }
+
+     span {
+          color: $primary-color;
+          vertical-align: top;
+          padding-top: 9px;
+          font-size: 80%;
+     }
+
+     i {
+          margin-top: -9px;
+          margin-right: 5px;
+     }
+}
+
+// Icons
+
+.fa-2 {
+     font-size: 18px;
+}
+
+.fa-3 {
+     font-size: 24px;
+}
+
+.fa-4 {
+     font-size: 27px;
+}
+
+.fa-5 {
+     font-size: 35px;
+}
+
+.fa-6 {
+     font-size: 40px;
+}
+
+.fa-primary {
+     color: $primary-color;     
+}
+
+.fa-border {
+     @include add-border(1px, $primary-color, all);
+     @include border-radius(5px);
+     padding: 13px 15px;
+     width: 70px;
+     margin-bottom: 10px;
+}
+

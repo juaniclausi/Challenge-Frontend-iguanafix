@@ -1,0 +1,40 @@
+// Mixins
+
+@mixin border-radius($radius){
+     -moz-border-radius: $radius;
+     -webkit-border-radius: $radius;
+     border-radius: $radius;  
+}
+
+@mixin transition($transition) {
+     -webkit-transition: $transition;
+     -moz-transition: $transition;
+     -ms-transition: $transition;
+     -o-transition: $transition;
+     transition: $transition;
+}
+
+@mixin add-border($size, $color, $position) {
+     @if $position == 'all'{
+          border:$size solid $color !important;          
+     } @else if $position == 'top' {
+          border-top:$size solid $color !important;   
+     } @else if $position == 'bottom' {
+          border-bottom:$size solid $color !important;   
+     } @else if $position == 'right' {
+          border-right:$size solid $color !important;   
+     } @else if $position == 'left' {
+          border-left:$size solid $color !important;   
+     } @else if $position == 'top-bottom' {
+          border-top:$size solid $color !important;   
+          border-bottom:$size solid $color !important;   
+     } @else if $position == 'right-left' {
+          border-right:$size solid $color !important; 
+          border-left:$size solid $color !important;     
+     }  
+}
+
+@mixin add-background($color){
+     background: $color;    
+}
+          

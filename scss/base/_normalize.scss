@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5 {
+     margin-top: 0;
+}
+
+.page-header { 
+     position: absolute;
+     bottom: 3%; // mirar responsive
+     @extend .list;         
+     border: 0;
+     font-size: 18px;
+}
+
+.tab-content {
+     padding: 20px 10%;
+     line-height: 1.5em;
+}
+
+.form-control {
+     width: 60%;     
+}
+
+.nav-tabs {   
+     text-align: center;
+     
+     li {
+          float :none;
+          display: inline-block;
+          
+          a {
+               font-size: 1.2em;
+               color: $primary-color;
+               font-weight: bold;
+          }          
+     }
+
+     li.active {
+          
+          a {
+               color: $primary-color;
+               font-weight: bold;
+               @include add-border(1px, #ffffff, all);       
+               @include add-border(2px, $primary-color, bottom);               
+          }         
+     }          
+} 
+
+ 

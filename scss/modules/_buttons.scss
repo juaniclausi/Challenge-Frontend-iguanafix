@@ -1,0 +1,38 @@
+// Buttons
+
+.btn-primary {
+     position: absolute;
+     bottom: 15%; 
+     margin-bottom: 30px;
+     left: 15px;
+     @include border-radius(40px);
+     font-size: 15px;
+     text-transform: uppercase;
+     @include add-background($secondary-color);
+     @include add-border(2px, #ffffff, all);
+     &:hover {
+          background: #ffffff;
+          color: $secondary-color;
+          @include add-border(2px, $secondary-color, all);
+          transition: all 250ms ease-in-out 0s;
+     }
+}
+
+
+.contratar {    
+     
+     @include border-radius(40px);
+     font-size: 15px;
+     text-transform: uppercase;
+     color: $secondary-color;
+     @include add-background(#ffffff);
+     @include add-border(2px, $secondary-color, all);
+     margin: 0 15px 20px 0;
+     
+     &:hover {
+          @include add-background($secondary-color);
+          color: #ffffff;
+          @include add-border(2px, $secondary-color, all);
+          transition: all 250ms ease-in-out 0s;
+     }
+}

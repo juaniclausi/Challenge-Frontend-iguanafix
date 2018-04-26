@@ -1,0 +1,39 @@
+body {
+     font-family: $base-font-family;
+     font-size: $base-font-size;
+     line-height: 1em;
+     color: $base-font-color;
+}
+
+a {
+     color: $primary-color;
+}
+
+ul,li {
+     list-style: none;
+}
+
+input, textarea, button {
+     @include border-radius(0px);
+}
+
+img.device {
+     width: 160px;
+     max-width: 160px;
+     margin-top: 3px;
+}
+
+.device-small {
+     width: 70%;
+     margin-bottom: -40px;
+}
+
+.price {
+     color: $secondary-color;
+     font-size: 2.8em;
+     letter-spacing: 1px;
+     line-height: 1em;
+     margin-top: 60px;
+     display: block;
+     font-weight: bold;
+}

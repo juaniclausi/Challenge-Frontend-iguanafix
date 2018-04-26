@@ -1,0 +1,71 @@
+// Carousel
+
+.carousel {
+     li {
+		margin-bottom: 20px;
+		display: block;
+
+		img {
+			object-fit: cover;
+			padding: 3px;
+			min-height: 96px;			
+			width: 100%;
+			cursor: pointer;
+			&:hover {
+				padding-right: 0;
+				@include transition(all 0.15s linear);
+				@include add-border(4px, $secondary-color, right);
+			}
+			@include add-border(1px, #cccccc, all);
+		}
+	}	
+}
+
+.figure {	
+	
+	img {
+		@include add-border(1px, #cccccc, all);
+		padding: 3px;
+		object-fit: cover;
+		height: 60vh;
+		width: 100%;
+		cursor: zoom-in;
+	}
+}
+
+// Tabs
+
+.spin {
+     margin-top: 45px;
+     display: inline-block;
+	
+	span {
+          display: inline-block;
+          width: 40px;
+          height: 42px;
+          text-align: center;
+          padding-top: 13px;
+          background: #CCC;
+          border: 1px solid #aaa;
+          cursor: pointer;
+     }
+
+     input {
+          width: 40px;
+          height: 42px;
+          text-align: center;
+          font-weight: bold;
+     }
+}
+
+.units {
+	position: absolute;
+	left: 140px;
+	bottom: 215px;
+	line-height: 40px;
+}
+
+
+
+
+

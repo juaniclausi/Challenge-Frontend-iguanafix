@@ -1,0 +1,53 @@
+// Navbar
+
+.navbar{
+     
+     margin: auto;          
+     min-height: 70px;
+     background: $primary-color;
+     margin-bottom: 10px;
+     padding-top: 10px; 
+     
+     h1 {
+          margin: 0 40px 0 40px;
+     }
+
+     a {
+          color: #fff !important;
+          font-size: 20px;
+          letter-spacing: 2px;
+          padding-bottom: 24px !important;
+          padding-top: 20px !important;
+          outline: none;
+     }   
+     
+     .phone {
+          color: #fff !important;
+          font-size: 20px;
+          letter-spacing: 2px;
+          padding-bottom: 24px !important;
+          padding-top: 20px !important;
+          outline: none;          
+     }
+
+     .nav {
+          margin: 0 40px 0 40px;
+     }
+}
+
+.navbar-fixed-top {
+     border: 0;
+}
+
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {     
+     @include add-border(3px, $secondary-color, bottom);
+     color: #fff !important;
+     background: $primary-color;
+     cursor: pointer;
+}
+
+
+
+
+ 
