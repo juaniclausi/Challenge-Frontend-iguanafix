@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">      
+    <meta name="description" content="Challenge Iguanafix">
+    <meta name="author" content="Clausi Zeni Juan Ignacio">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Challenge Iguanafix</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">    
+  </head>
+
+  <body>
+    <header class="header-main">
+      <nav class="navbar navbar-fixed-top role="navigation"">                
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h1 class="navbar-left">
+          <a href="https://www.iguanafix.com.ar/" target="_blank"><img src="img/logo.svg" alt="iguanafix" class="device"></a>
+        </h1>
+        <span class="phone navbar-left"><i class="fa fa-phone"></i> 0810-220-6173</span>      
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Casa</a></li>
+            <li><a href="index.html">Auto</a></li>
+            <li><a href="index.html">Empresa</a></li>
+            <li>
+               <a type="button" data-toggle="modal" data-target="#miModal">Ingresar <i class="fa fa-user"></i></a>
+            </li>              
+          </ul>            
+        </div>
+      </nav>
+    </header>
+
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fa fa-close fa-6"></i></span>
+            </button>
+            <h3 class="modal-title" id="myModalLabel">Iniciar Sesión</h3>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="field">
+                  <input type="email" required>
+                  <label>Email</label>
+                </div>
+                <div class="field">
+                  <input type="password" required>
+                  <label>Contraseña</label>
+                  <small>
+                    <a href="#">Olvide mi contraseña</a>
+                  </small>
+                </div>
+                <button>Entrar</button>
+              </form> 
+              <h2>¿Todavía no tenés una cuenta?</h2>
+              <nav>
+                <a href="#">Registrarte gratis</a>
+                <a href="#">Registro de profesionales</a>
+              </nav>
+              <span>Ó</span>
+              <button class="facebook">Continuar con <i class="fa fa-facebook-f"></i></button>
+          </div>        
+        </div>        
+      </div>
+    </div>
+
+    <section class="section-bread">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <ol class="breadcrumb">
+                <li><a href="#">Contratar un servicio</a></li>
+                <li class="active"><a href="#">Instalación de aire acondicionado</a></li>               
+              </ol>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="col-md-4 col-sm-4">              
+                <ul class="carousel">
+                  Cargando... 
+                </ul>               
+            </div>
+            <div class="col-md-8 col-sm-8 figure"></div>
+          </div>         
+          <div class="col-md-6 col-sm-12 calc">
+              <div class="block block-calc">
+                <h2>Instalación de aire </br>acondicionado split.</h2>
+                <div class="price">
+                   <p>$698,00</p>
+                </div>                
+                <form class="form-group section-price">
+                    <label for="select">Frigorías</label>
+                    <select class="form-control" id="listado-frigorias">
+                    </select>                  
+                    <div class="quantity">
+                      <div class="spin"><span><i class="fa fa-minus"></i></span><input value="2" id="calc"/><span><i class="fa fa-plus"></i></span></div> 
+                    </div>                  
+                    <span class="units"> unidades.</span>
+                </form>                              
+                <a href="#" class="btn btn-primary btn-lg">Programar visita</a>
+                <h3 class="page-header"> Que incluye</h3>
+                <ul class="list list-feature">
+                  <li><i class="fa fa-check fa-primary"></i> <span> Desinstalación del equipo anterior.</span></li>
+                  <li><i class="fa fa-check fa-primary"></i> <span> Colocación de nuevo equipo: unicad interior y exterior.</span></li>
+                  <li><i class="fa fa-check fa-primary"></i> <span> Colocación de drenaje.</span></li>                
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>            
+    </section>
+
+    <section class="section-productos">
+      <div class="container tablas">
+        <ul class="nav nav-tabs" id="tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Detalles del servicio</a></li>
+          <li role="presentation"><a href="#">Qué no incluye</a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent"> 
+          <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab"> 
+              <p>Colocación del nuevo equipo: unidad interior (hasta 2,5 mts de altura, incluido el taparroyos) y exterior (en lugares accesibles, hasta 2,5 mts de altura), Colocación de drenaje. Presurización, vacio y control de carga. Ménsulas estándar. Cañería de interconexión hasta 3 mts (3 mts de caño de cobre 1/2 o 1/4 , 3 mts de cable tipo taller - 5 1/2, 3 mts de mangera de desagüe para drenaje, cinta PVC, Kit de tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar</p>
+              <p>Colocación del nuevo equipo: unidad interior (hasta 2,5 mts de altura, incluido el taparroyos) y exterior (en lugares accesibles, hasta 2,5 mts de altura), Colocación de drenaje. Presurización, vacio y control de carga. Ménsulas estándar. Cañería de interconexión hasta 3 mts (3 mts de caño de cobre 1/2 o 1/4 , 3 mts de cable tipo taller - 5 1/2, 3 mts de mangera de desagüe para drenaje, cinta PVC, Kit de tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar</p>
+          </div>
+        </div>
+        <div class="productos"></div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <section id="footer-header">    
+        <img src="img/logo.svg">
+          <ol>
+          <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        </ol>
+      </section>
+        <section id="footer-main">
+          <div class="row">
+            <h4>Casa <hr></h4>
+            <ol class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+            </ol>    
+            <ol class="col col-sm-12 col-md-12 col-lg-6">
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+            </ol>
+          </div>    
+          <div class="row">
+            <h4>Autos <hr></h4>
+              <ol class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              </ol>    
+              <ol class="col col-sm-12 col-md-12 col-lg-6">
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+                <li class="col col-xs-6 col-sm-4 col-md-4 col-lg-5"><a href="#">Albañileria</a></li>
+              </ol>
+            </div>    
+      </section>
+        <section id="footer-base">
+          <span class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">Copyright 2016. All right reserved | <a href="https://www.iguanafix.com.ar/" target="_blank">IguanaFix</a></span>
+            <ol class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <li>
+                <a href="#">
+                  <img src="img/android.svg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <img src="img/apple.svg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/fiscal.jpg">
+                </a>
+              </li>
+            </ol>
+        </section>    
+      </footer>
+
+    
+    
+    
+    <script src="js/main.js"></script>   
+    <script src="js/interfaz.js"></script>
+    <script src="js/app.js"></script>
+    
+    
+  </body>
+</html>
